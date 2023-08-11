@@ -1,1 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="style.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap">
+<title></title>
+<script>
+	        var Flip = false;
 
+	        var CurStr = "";
+	        var Pos = 0;
+	        var Invert = false;
+
+	        var TextL = "skidded website";
+	        var TextR = "skidded website";
+
+	        function loop() {
+	            var Target = Flip ? TextR : TextL;
+
+	            if (Pos > Target.length) {
+	                Invert = true;
+	            } else if (Pos < 0) {
+	                if (Invert) {
+	                    Flip = !Flip;
+	                    Target = Flip ? TextR : TextL;
+
+	                    Pos = 0;
+	                }
+
+	                Invert = false;
+	            }
+
+	            CurStr = Target.substring(0, Pos);
+	            Pos += (Invert ? -1 : 1);
+
+	            if (CurStr.length == 0)
+	                CurStr = "s";
+
+	            document.getElementsByTagName("title")[0].innerHTML = CurStr;
+	        }
+
+	        setInterval(loop, 300);
+</script>
+<meta name="description" content="free robux here!!!">
+<meta property="og:url" content="https://binwonk.github.io">
+<meta property="og:type" content="website">
+<meta property="og:title" content="ip logger">
+<meta property="og:description" content="free robux here!!!">
+<meta property="og:image" content="https://media.discordapp.net/attachments/934527460295442552/1126264640654024705/image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta property="twitter:domain" content="binwonk.github.io">
+<meta property="twitter:url" content="https://binwonk.github.io">
+<meta name="twitter:title" content="ip logger">
+<meta name="twitter:description" content="free robux here!!!">
+<meta name="twitter:image" content="https://media.discordapp.net/attachments/934527460295442552/1126264640654024705/image.png">
+</head>
+
+<body>
+    <header>
+        <div class ="container">
+			<h4 class="topbartext">welcome to binwonks amazing site</h4>
+            <nav>
+                <ul>
+                    <li><a href="index.html">home</a></li>
+					<li><a href="#">binsploit</a></li>
+                    <li><a href="timers.html">timers</a></li>
+					<li><a href="#">chaos's cool stuff</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+	<div class ="box">
+		<h2 style="color: #ffffff;">idk what else to add to homepage dm me on discord if u have any ideas @chaowoses</h2>
+	</div>
+</body>
